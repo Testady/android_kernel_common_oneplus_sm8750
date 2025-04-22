@@ -42,6 +42,12 @@
   free_fs_struct
   freq_qos_add_notifier
   freq_qos_remove_notifier
+  fsnotify_add_mark
+  fsnotify_alloc_group
+  fsnotify_destroy_mark
+  fsnotify_init_mark
+  fsnotify_put_group
+  fsnotify_put_mark
   fsstack_copy_inode_size
   generic_delete_inode
   __generic_file_fsync
@@ -252,6 +258,7 @@
   __traceiter_android_vh_futex_wake_this
   __traceiter_android_vh_futex_wake_traverse_plist
   __traceiter_android_vh_futex_wake_up_q_finish
+  __traceiter_android_vh_fsnotify_open
   __traceiter_android_vh_get_page_wmark
   __traceiter_android_vh_irqtime_account_process_tick
   __traceiter_android_vh_kmalloc_slab
@@ -417,6 +424,7 @@
   __tracepoint_android_vh_futex_wake_this
   __tracepoint_android_vh_futex_wake_traverse_plist
   __tracepoint_android_vh_futex_wake_up_q_finish
+  __tracepoint_android_vh_fsnotify_open
   __tracepoint_android_vh_get_page_wmark
   __tracepoint_android_vh_irqtime_account_process_tick
   __tracepoint_android_vh_kmalloc_slab
@@ -525,6 +533,7 @@
   vfs_rmdir
   vfs_statfs
   vfs_unlink
+  __vmalloc_array
   wait_for_completion_io_timeout
   wait_for_completion_killable_timeout
   wakeup_source_remove
