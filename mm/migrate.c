@@ -630,6 +630,8 @@ void folio_migrate_flags(struct folio *newfolio, struct folio *folio)
 	if (folio_test_idle(folio))
 		folio_set_idle(newfolio);
 
+	folio_migrate_refs(newfolio, folio);
+	
 	trace_android_vh_look_around_migrate_folio(folio, newfolio);
 
 	/*
